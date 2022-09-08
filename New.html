@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<body>
+<script>
+  function validation(){
+
+// Fetching Values in Variables
+var RollNo = document.getElementById("RollNo").value;
+var Comp = parseInt(document.getElementById("ComputerMarks").value);
+var Phy = parseInt(document.getElementById("PhyMarks").value);
+var Che = parseInt(document.getElementById("CheMarks").value);
+var Mathematics = parseInt(document.getElementById("MathMarks").value);
+var Geo = parseInt(document.getElementById("GeoMarks").value);
+
+// Calculating Total
+var total = Comp + Phy + Che + Mathematics + Geo;
+// Calculating Average
+var avg = total / 5;
+{    document.getElementById("totalMarks").innerHTML = "Total Marks: "+total;}
+    {    document.getElementById("avg").innerHTML = "Average: "+avg+"%";}
+
+        // Calculating Grade
+    if (avg >=80 && avg <=100){
+        document.getElementById("grading").innerHTML = "Grade: A";
+        return false;
+    }
+    if (avg >=75 && avg <80){
+        document.getElementById("grading").innerHTML = "Grade: B+";
+        return false;
+    }
+    if (avg >=70 && avg <75){
+        document.getElementById("grading").innerHTML = "Grade: B";
+        return false;
+    }
+    if (avg >=65 && avg <70){
+        document.getElementById("grading").innerHTML = "Grade: C+";
+        return false;
+    }
+    if (avg >=60 && avg <65){
+        document.getElementById("grading").innerHTML = "Grade: C";
+        return false;
+    }
+    if (avg >=55 && avg <60){
+        document.getElementById("grading").innerHTML = "Grade: D+";
+        return false;
+    }
+    if (avg >=50 && avg <55){
+        document.getElementById("grading").innerHTML = "Grade: D";
+        return false;
+    }
+    if (avg <50){
+        document.getElementById("grading").innerHTML = "Grade: F";
+        return false;
+    }
+
+}
+
+
+</script>
+
+</body>
+</html>

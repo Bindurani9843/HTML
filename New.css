@@ -1,0 +1,30 @@
+section{
+    height: 80px;
+    width: 100%;
+    background:orange;
+
+}
+#a1{
+    
+    
+    text-align: center;
+    text-transform:uppercase;
+    text-indent: 10px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-decoration: 10px;
+    text-shadow: 1px 3px 5px rgb(100, 16, 13);
+    
+
+}
+#a1{
+    float: below;
+    width: 50%;
+}
+h1{
+    margin-center: 400px;
+    box-shadow: 10px 10px 10px black;
+}
+img{
+    box-shadow: 10px 10px 10px black;
+}
